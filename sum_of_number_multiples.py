@@ -1,0 +1,9 @@
+import numpy as np
+
+x = np.arange(1, 1000)
+# find multiple 3 or 5
+n= x[(x % 3 == 0) | (x % 5 == 0)]
+
+print(n[:1000])
+
+print(n.sum())
